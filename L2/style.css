@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: chalk;
+}
+@font-face {
+  font-family: chalk;
+  src: url("Black\ Crayon.ttf");
+}
+body {
+  background-image: url("board.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  width: 100%;
+  font-family: sans-serif;
+  position: relative;
+}
+.logo {
+  color: white;
+  font-size: 2rem;
+  padding: 0 !important;
+  line-height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.int {
+  padding: 0 !important;
+  line-height: 50px;
+  position: absolute;
+  left: 10px;
+}
+::placeholder {
+  color: white;
+}
+.search {
+  padding: 5px;
+  background: none;
+  outline: none;
+  color: White;
+}
+.navlist {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.navitem {
+  list-style-type: none;
+  padding: 1rem;
+}
+.navlink {
+  text-decoration: none;
+  color: white;
+}
+.navitem:hover:not(.logo, .int) {
+  border-bottom: 1px solid white;
+}
+.container {
+  height: 91vh;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.detail {
+  display: grid;
+  place-content: center;
+  width: 50%;
+  height: 100%;
+}
+.detail h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  font-family: chalk;
+  color: white;
+}
+.detail p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 1.5rem;
+  color: white;
+}
+.btn-container {
+  text-align: center;
+}
+.btn {
+  width: 10vw;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.desc {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.desc svg {
+  position: relative;
+  width: 70%;
+  height: 75%;
+  fill: white;
+}
+.desc ul {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+}
+.desc p {
+  font-size: 1.3rem;
+}
